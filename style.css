@@ -1,0 +1,398 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    width: 25rem;
+    background-color: black;
+    border-right: 1px solid gray;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.navi-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 15rem;
+}
+
+.navi-link {
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.navi-link:hover {
+    background-color: rgb(24, 24, 24);
+    border-radius: 3rem;
+}
+
+.navi-icon {
+    font-size: 1.5rem;
+}
+
+.navi-text {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.post-button {
+    background: rgb(35, 186, 246);
+    width: 12.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    margin-left: 2rem;
+}
+
+.post-button:hover {
+    cursor: pointer;
+    background: rgb(8, 128, 176);
+}
+
+.post-button span {
+    font-weight: 700;
+    color: white;
+}
+
+.sidebar-user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.sidebar-user-container {
+    display: flex;
+    padding: 0.2rem 2rem 0.2rem 0.5rem;
+}
+
+.sidebar-user-pic img {
+    width: 3.5rem;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.sidebar-user-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.sidebar-user:hover {
+    cursor: pointer;
+}
+
+.sidebar-user-container:hover {
+    background-color: rgb(24, 24, 24);
+    border-radius: 3rem;
+}
+
+.sidebar-user-name {
+    font-weight: 700;
+}
+
+.sidebar-user-handle {
+    color: gray;
+}
+
+.user-dropup {
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-dropdown-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+main {
+    margin-left: 25rem;
+    margin-right: 25rem;
+    height: 100%;
+    background-color: black;
+}
+
+.explore-bar {
+    height: 100vh;
+    position: fixed;
+    width: 25rem;
+    top: 0;
+    right: 0;
+    background-color: black;
+    border-left: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar-input {
+    width: 20rem !important;
+    border-radius: 2rem !important;
+    background-color: rgb(24, 24, 24) !important;
+    border: none !important;
+}
+
+.subscribe-container {
+    width: 20rem;
+    border-radius: 2rem;
+    color: white;
+    margin-top: 2rem;
+    background-color: rgb(24, 24, 24);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe-premium {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.subscribe-button {
+    padding: 0.5rem;
+    background-color: rgb(35, 186, 246);
+    border-radius: 2rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.subscribe-button:hover {
+    cursor: pointer;
+    background: rgb(8, 128, 176);
+}
+
+.main-content-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+}
+
+.mc-buttons {
+    display: flex;
+}
+
+.mc-left-button, .mc-right-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.mc-left-button:hover, .mc-right-button:hover {
+    background-color: rgb(24, 24, 24);
+    cursor: pointer;
+}
+
+.tweet-form-container {
+    height: 10rem;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.tweet-form-dp {
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tweet-form-dp img {
+    margin-top: 0.5rem;
+    height: 3rem;
+    border-radius: 3rem;
+}
+
+.tweet-form {
+    width: 100%;
+}
+.actual-tweet-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.tweet-form textarea {
+    resize: none;
+    border: none;
+    color: white;
+    width: 90%;
+    font-size: 1.8rem;
+}
+
+.tweet-form textarea:focus {
+    outline: none !important;
+    border-bottom: 1px solid gray;
+}
+
+.tweet-form-options {
+    width: 100%;
+    display: flex;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+}
+
+.tweet-form-btn {
+    background-color: rgb(35, 186, 246);
+    border-radius: 2rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+}
+
+.tweet-form-btn:hover {
+    cursor: pointer;
+    background: rgb(8, 128, 176);
+}
+
+.tweet-container {
+    border-bottom: 1px solid gray;
+    padding: 0.5rem;
+}
+
+.tweet-left {
+    width: 3rem;
+}
+
+.tweet-left img {
+    margin-top: 0.5rem;
+    height: 3rem;
+    border-radius: 3rem;
+}
+
+.tweet-right {
+    width: 90%;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tweet-author {
+    display: flex;
+}
+
+.tweet-author-name {
+    font-weight: 600;
+}
+
+.tweet-author-handle, .tweet-createdAt {
+    color: gray;
+}
+
+.tweet-content {
+    margin-top: 0.2rem;
+    width: 100%;
+    display: flex;
+}
+
+.tweet-buttons {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: gray;    
+}
+
+.tweet-buttons:hover {
+    cursor: pointer;
+}
+
+.tweet-buttons-text {
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 5rem;
+    }
+    
+
+    main {
+        margin-left: 5rem;
+    }
+
+    .navi-text {
+        display: none;
+    }
+
+    .navi-item {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .post-button {
+        display: none;
+    }
+
+    .sidebar-user-info {
+        display: none;
+    }
+
+    .sidebar-user-container {
+        padding: 0;
+    }
+
+    .user-dropup {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) {
+    main {
+        margin-right: 0;
+    }
+
+    .explore-bar {
+        display: none;
+    }
+
+}
